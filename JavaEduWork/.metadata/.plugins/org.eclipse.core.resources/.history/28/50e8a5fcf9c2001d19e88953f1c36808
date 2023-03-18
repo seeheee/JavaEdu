@@ -1,0 +1,24 @@
+package com.edu.parent;
+
+import com.edu.util.MyDate;
+
+public class Employee {
+	private String name;
+	private MyDate birthdate;
+	private double salary;
+	
+	public Employee() {}
+	
+	public Employee(String name, MyDate birthdate, double salary) {
+		super();
+		this.name = name;
+		this.birthdate = birthdate;
+		this.salary = salary;
+	}
+	
+	public String getDatails() {
+		return name + "-" + birthdate + "-" + salary;
+	}
+	
+
+}

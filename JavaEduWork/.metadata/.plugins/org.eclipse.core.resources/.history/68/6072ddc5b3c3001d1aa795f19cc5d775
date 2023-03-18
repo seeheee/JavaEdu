@@ -1,0 +1,78 @@
+package com.edu.service;
+
+import com.edu.child.Manager;
+import com.edu.parent.Employee;
+
+/* 다양한 이기종간의 집합체를 관리하는 기능을 모아놓은 클래스 -- 결과적으로 CRUD
+ * 
+ * 1 Step: 저차원적인 구조
+ * public void addManager(Manager m){}
+ * public void deleteManager(Manager m){}
+ * 
+ * 
+ * 2 Step 메소드 오버로딩.. 자식이 많아지면 너무 많아짐...
+ * public void addEmployee(Manager m){}
+ * public void addEmployee(Secretery s){}
+ * 
+ * 3 step
+ * public void addEmployee(Employee e){
+ *    if(e instanceof Manager){
+ * }
+ *} 
+ */
+
+/*
+ * 1. EmployeeService 클래스는 Employee, Employee[]을 hasing
+ * 2. 부모타입의 인자값을 hasing함으로써 다양한 자식 클래스들을 단일하게 관리할 수 있다.
+ *    Poltmorphic Argument
+ */
+
+
+public class EmployeeService {
+	//1.특정한 Employee의 일년 연봉을 리턴하는 기능을 정의(선언 + 구현)
+	public int getAuualSalary(Employee e) {
+		int annualSalary = 0;
+		
+		annualSalary = (int)(e.getSalary() * 12);
+		
+		if(e instanceof Manager){
+			
+			annualSalary = (int)(((Manager) e).getSalary() * 12) + ((Manager) e).getBouns();
+			System.out.println(annualSalary);
+		}
+		return annualSalary;
+	}
+	
+	//2.모든사원의 연간 총 인건비를 리턴
+	public int getTotalCost(Employee[] ea) {
+		int totalCost = 0;
+		for(Employee e : ea) {
+			totalCost += getAuualSalary(e);
+		}
+		return totalCost;
+	}
+	
+	//3. 특정한 가원 검색
+	public Employee findEmployeeByName(Employee[] ea, String name) {
+		Employee emp = null;
+		for(Employee e : ea) {
+			if(e.getName().equals(name)) {
+				emp = e;
+			}
+		}
+		return emp;
+	}
+	
+	//4.동일한 주소에 거주하는 사원들을 검색
+	public Employee[] findEmployeeNtAddr(Employee[] ea, String address) {
+		Employee[] emp = null;
+		int idx = 0;
+		for(Employee e : ea) {
+			if(e.getAddress().equals(address)) {
+				emp[idx++] = e;
+			}
+		}
+		return emp;
+	}
+
+}

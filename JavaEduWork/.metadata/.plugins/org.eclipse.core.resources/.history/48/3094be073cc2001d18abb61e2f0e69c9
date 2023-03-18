@@ -1,0 +1,21 @@
+package com.edu.self.test;
+import java.util.Arrays;
+
+public class ArrayAppTest {
+	static int[]  list = { 34, 23, 64, 25, 12, 75, 22, 88, 53, 37 };
+	
+	public static void main(String[] args) {	
+		print(list);
+		total(list);
+		average(list);
+		minimum(list);
+	}
+	
+	static void print(int[] arr) {  }
+
+	static void total(int[] arr) {	  }
+		
+	static void average(int[] arr) {	}
+	
+	static void minimum(int[]arr) { 	}
+}

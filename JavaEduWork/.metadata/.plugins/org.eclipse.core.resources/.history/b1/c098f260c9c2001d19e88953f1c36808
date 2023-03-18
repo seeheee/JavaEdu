@@ -1,0 +1,29 @@
+package com.edu.self;
+
+public class Customer {
+	public String custName;
+	public String address;
+	public Account account;
+	
+	public String getCustName() {
+		return custName;
+	}
+	public void setCustName(String custName) {
+		this.custName = custName;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public Account getAccount() {
+		return account;
+	}
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+	
+	
+
+}

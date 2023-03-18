@@ -1,0 +1,33 @@
+package com.edu.oop;
+
+/*
+ * Object class
+ * 로컬변수와 필드의 이름이 같을때 구별하기 위해서 필드 앞에 this 키워드 붙임
+ * 
+ */
+
+
+public class NoteBook {
+	//1. field
+	public String brand;
+	public int price;
+	public int serialNumber;
+	
+	//2. method
+	public String getNoteBookInfo() {
+		return brand+","+price;
+		
+	}
+	//필드에 값을주입하는 기능 추가,
+	public void setNoteBook(String brand, int price, int serialNumber) {
+		this.brand = brand;
+		this.price = price;
+		this.serialNumber = serialNumber;
+				
+		
+	}
+	
+	
+	
+		
+}

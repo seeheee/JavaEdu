@@ -1,0 +1,13 @@
+package com.edu.oop.test;
+/**/
+
+
+
+public class NoteBookAppTest1 {
+
+	public static void main(String[] args) {
+		NoteBook nb = new NoteBook();
+
+	}
+
+}

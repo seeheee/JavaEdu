@@ -1,0 +1,30 @@
+package com.edu.service;
+/* 다양한 이기종간의 집합체를 관리하는 기능을 모아놓은 클래스 -- 결과적으로 CRUD
+ * 
+ * 1 Step: 저차원적인 구조
+ * public void addManager(Manager m){}
+ * public void deleteManager(Manager m){}
+ * 
+ * 
+ * 2 Step 메소드 오버로딩.. 자식이 많아지면 너무 많아짐...
+ * public void addEmployee(Manager m){}
+ * public void addEmployee(Secretery s){}
+ * 
+ * 3 step
+ * public void addEmployee(Employee e){
+ *    if(e instanceof Manager){
+ * }
+ *} 
+ */
+
+/*
+ * 1. EmployeeService 클래스는 Employee, Employee[]을 hasing
+ * 2. 부모타입의 인자값을 hasing함으로써 다양한 자식 클래스들을 단일하게 관리할 수 있다.
+ *    Poltmorphic Argument
+ */
+
+
+public class EmployeeService {
+	
+
+}

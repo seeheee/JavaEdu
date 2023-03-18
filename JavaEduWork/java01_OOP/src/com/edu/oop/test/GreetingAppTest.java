@@ -1,0 +1,32 @@
+package com.edu.oop.test;
+import com.edu.oop.Greeting;
+
+/*
+ * 실행클래스의 역할
+ * 1. 객체생성
+ * 2. 접근
+ *    필드 ---> 값 할당(초기화)
+ *    메소드 ---> 호출
+ */
+
+public class GreetingAppTest {
+
+	public static void main(String[] args) {
+		
+		//1. 메모리에 클래스의 멤버들을 다 올린다. == 객체생성
+		Greeting hello = new Greeting();
+		
+		//2. 변수에 값 저장 = 필드초기화
+		hello.who = "롯데정보통신 사원 여러분";
+		hello.greet = "자바 첫수업에 오신 것을 환영합니다.";
+		
+		//3. 함수를 동작
+		hello.sayHello();//호출
+
+	}
+
+}
+
+
+
+

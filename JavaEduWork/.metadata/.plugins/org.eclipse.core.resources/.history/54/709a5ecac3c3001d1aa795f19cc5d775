@@ -1,0 +1,13 @@
+package com.edu.test;
+/*
+ * 6. SingleTone Pattern
+ */
+
+public class StaticExamTest3 {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.edu.child;
+
+import com.edu.parent.Employee;
+import com.edu.util.MyDate;
+
+public class Manager extends Employee {
+	private String dept;
+	private int bouns;
+	
+	public Manager(String name, MyDate birthdate, double salary, String dept, int bouns) {
+		super(name, birthdate, salary);
+		this.dept = dept;
+		this.bouns = bouns;
+	}
+
+
+
+	@Override
+	public String getDatails() {
+		return super.getDatails() + "," + dept + "," + bouns;
+	}
+	
+	
+	
+}

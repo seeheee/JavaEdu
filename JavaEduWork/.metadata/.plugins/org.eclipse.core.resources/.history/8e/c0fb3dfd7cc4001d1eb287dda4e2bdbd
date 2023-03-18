@@ -1,0 +1,22 @@
+package com.edu.collection.test;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapTest4 {
+
+	public static void main(String[] args) {
+		Map<String, Integer> map = new HashMap<>();
+		
+		map.put("강호동", 90);
+		map.put("이수근", 95);
+		map.put("서장훈", 80);
+		map.put("김희철", 70);
+		
+		for (int i = 0; i<4; i++) {
+			System.out.println(map.get(i));
+		}
+
+	}
+
+}

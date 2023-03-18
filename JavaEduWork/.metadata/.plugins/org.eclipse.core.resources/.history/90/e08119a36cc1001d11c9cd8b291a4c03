@@ -1,0 +1,11 @@
+package com.edu.oop2;
+
+public class Shirt {
+	public String brand;
+	public boolean longSleeved;
+	public char size;
+	
+	public String getDetails() {
+		return brand +"," +longSleeved + "," + size;
+	}
+}

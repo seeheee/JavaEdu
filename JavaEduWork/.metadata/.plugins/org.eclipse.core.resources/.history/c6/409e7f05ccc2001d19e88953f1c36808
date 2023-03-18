@@ -1,0 +1,22 @@
+package com.edu.self.test;
+
+import com.edu.self.Account;
+import com.edu.self.Customer;
+
+public class BankAppTest2 {
+
+	public static void main(String[] args) {
+
+//		Account ac1 = new Account(123, "신한", 5000.0);
+//		Account ac2 = new Account(1234, "국민", 10000.0);
+		
+		
+		Customer cu1 = new Customer("문동은", "신대방동");
+		Customer cu2 = new Customer("이연진", "여의도");
+		
+		
+		
+
+	}
+
+}

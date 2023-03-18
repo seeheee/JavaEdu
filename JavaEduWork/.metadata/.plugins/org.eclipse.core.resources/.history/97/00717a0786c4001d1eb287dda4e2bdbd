@@ -1,0 +1,106 @@
+package com.edu.service.impl;
+
+import java.util.ArrayList;
+
+import com.edu.service.EmployeeListService;
+import com.edu.vo.Employee;
+
+public class EmployeeListServiceImpl implements EmployeeListService{
+	
+	
+	private ArrayList<Employee> list;
+	
+	private static EmployeeListServiceImpl service = new EmployeeListServiceImpl();
+	
+	private EmployeeListServiceImpl(){
+		//리사이징이 가능
+		list = new ArrayList<>();
+	}
+	
+	
+	public static EmployeeListServiceImpl getInstance() {
+		return service;
+	}
+	
+	@Override
+	public void addEmployee(Employee e) {
+		//있다면 추가안됨
+		// 없다면 추가되도록
+		boolean find = false;
+		for(Employee emp : list) {
+			if(emp.getEmpId().equals(e.getEmpId())) {
+				find = true;
+				System.out.println(e.getName()+"님은 이미 직웝으로 등록된 상태입니다.");
+				return;
+			}
+		}
+		
+		if(find==false) {
+			list.add(e);
+			System.out.println(e.getName()+"님은 직원으로 등록되었습니다.");
+		}
+		
+		
+//		int sizeOfArrayList = list.size();
+//		
+//		if (sizeOfArrayList == 0) {
+//			list.add(e);
+//			System.out.println(e.getName()+"님은 직원으로 등록되었습니다.");
+//		}
+//		else {
+//			for(int i =0; i < sizeOfArrayList; i++) {
+//				if(list.get(i).equals(e)) {
+//					System.out.println("존재합니다");
+//				}
+//				else {
+//					list.add(e);
+//				}
+//			}
+//		}
+	}
+
+	@Override
+	public void deleteEmployee(String empId) {
+		// 삭제하려는 직원이있다면 삭제 진행
+		// TODO Auto-generated method stub
+		if(list.isEmpty()) {
+			System.out.println("직원이 없습니다.");
+		}else {
+			for(int i =0; i < list.size(); i++) {
+				if(list.get(i).equals(empId)) {
+					list.remove(i);
+				}
+			}
+		}
+	}
+
+	@Override
+	public void updateEmployee(Employee e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public ArrayList<Employee> findEmployees(String addr) {
+//		Employee employee = ;
+//		if(list.isEmpty()) {
+//			System.out.println("직원이 없습니다.");
+//		}else {
+//			for(int i =0; i < list.size(); i++) {
+//				if(list.get(i).equals(addr)) {
+//					employee = list.get(i);
+//				}
+//			}
+//		}
+//		return ;
+	}
+
+	@Override
+	public void findEmployees() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

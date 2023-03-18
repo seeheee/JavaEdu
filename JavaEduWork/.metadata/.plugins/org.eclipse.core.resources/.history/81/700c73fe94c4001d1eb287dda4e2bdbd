@@ -1,0 +1,5 @@
+package com.edu.exception;
+
+public class DuplicateIDException {
+
+}

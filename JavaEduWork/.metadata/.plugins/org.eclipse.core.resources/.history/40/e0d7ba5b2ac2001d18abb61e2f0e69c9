@@ -1,0 +1,30 @@
+package com.edu.capsulation.test;
+
+import java.util.Scanner;
+
+import com.edu.capsulation.MyDate;
+
+public class MyDateTest {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("월 입력>>");
+		int month = sc.nextInt();
+				
+		System.out.println("날짜 입력>>");
+		int day = sc.nextInt();
+				
+		MyDate md = new MyDate();
+		
+//		md.month = 13;
+//		md.day = 33;
+		md.setMonth(month);
+		md.setDay(day);
+		
+		System.out.println(md.getDay() + " , " +md.getMonth());
+		
+		
+
+	}
+
+}

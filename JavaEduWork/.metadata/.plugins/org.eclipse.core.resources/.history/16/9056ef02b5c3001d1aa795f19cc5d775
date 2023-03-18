@@ -1,0 +1,33 @@
+package com.edu.test;
+
+import com.edu.child.Manager;
+import com.edu.child.Secretery;
+import com.edu.parent.Employee;
+import com.edu.service.EmployeeService;
+import com.edu.util.MyDate;
+
+/*
+ * HeteroGenous collection
+ */
+
+
+
+public class PolymorphismTest3 {
+
+	public static void main(String[] args) {
+		
+		Employee[] emps = {
+				 new Manager("정우성", new MyDate(1980,3,3), 685200,"여의도", "기획부", 2350),
+				 new Secretery("문동은", new MyDate(1982,12,3), 20200,"여의도", "재정부", 2350, "James"),
+				 new Manager("정우성111", new MyDate(1980,3,3), 685200, "여의도","기ssss획부", 2350),
+				 new Secretery("문동은1111", new MyDate(1982,12,3), 80000,"여의도1" ,"재정sss부", 2350, "Jssssames"),
+		};
+		
+		EmployeeService service = new EmployeeService();
+		
+		
+
+
+	}
+
+}

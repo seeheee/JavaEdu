@@ -1,0 +1,18 @@
+package com.edu.datatype.test;
+/*
+ * Local V
+ * 1) 선언된 위치가 메소드 안
+ * 2) 해당 메소드 안에서만 사용할 수 있다
+ * 3) 
+ */
+
+public class DataTypeAppTest1 {
+
+	public static void main(String[] args) {
+		byte b; //변수 선언
+		b = 1;
+		System.out.println(b);
+
+	}
+
+}

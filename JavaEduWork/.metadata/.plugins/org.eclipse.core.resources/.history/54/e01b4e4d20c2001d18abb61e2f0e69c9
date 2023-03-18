@@ -1,0 +1,32 @@
+/*
+ * Encapsulation
+ * 소스코드 작성패턴
+ * 1. field 앞 --> private(-)
+ * 2. field에 값을 넣고 받고 --> public(+) 
+ *    void setXxxx(0,0,0)
+ *    Xxx getXxx(()
+ * 3. 
+ * */
+
+package com.edu.capsulation;
+
+public class MyDate {
+	public int month;
+	public int day;
+	
+	public int getMonth() {
+		return month;
+	}
+	public void setMonth(int month) {
+		this.month = month;
+	}
+	public int getDay() {
+		return day;
+	}
+	public void setDay(int day) {
+		this.day = day;
+	}
+	
+	
+
+}

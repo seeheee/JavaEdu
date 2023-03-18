@@ -1,0 +1,26 @@
+package com.edu.user.test;
+/*
+ * 사용자 정의 
+ * 1. 내가 고의로 특정한 조건에서 일부러 예외를 발생시키는 것
+ * 2. 내가 예외 클래스를 정의해서 사용
+ */
+class UserExam{
+	public void go() {
+		int i = 10;
+		int j = 0;
+		
+		if(j==0) {
+			// 여기서 고의적으로 폭탄을 터뜨리겠다...ArithmeticException
+			throw new ArithmeticException();
+		}
+	}
+}
+
+public class UserExceptionTest34 {
+	
+	
+	System.out.println()
+	UserExam user = new UserExam();
+	user.go();
+
+}

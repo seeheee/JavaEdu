@@ -1,0 +1,23 @@
+package com.edu.compile.test;
+
+import java.io.FileReader;
+
+class FileReading{
+	public void readFile(String fileName) {
+		FileReader fr = null;
+		
+		fr = new FileReader(fileName);
+	}
+}
+public class CompileExceptionTest2 {
+
+	public static void main(String[] args) {
+		FileReading f = new FileReading();
+		String fileName = "C:\\JavaEduWork\\workshop01\\src\\com\\edu\\self\\Account.java";
+		f.readFile(fileName);
+		
+		System.out.println("파일을 잘 읽어들였습니다.");
+
+	}
+
+}

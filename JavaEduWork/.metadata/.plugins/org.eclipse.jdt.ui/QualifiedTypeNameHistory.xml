@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.edu.oop.Greeting"/>
+    <fullyQualifiedTypeName name="com.edu.oop.NoteBook"/>
+    <fullyQualifiedTypeName name="com.edu.oop2.Programmer"/>
+    <fullyQualifiedTypeName name="com.edu.oop2.NoteBook"/>
+    <fullyQualifiedTypeName name="com.edu.oop2.Shirt"/>
+    <fullyQualifiedTypeName name="com.edu.self.Account"/>
+    <fullyQualifiedTypeName name="com.edu.self.Customer"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.edu.capsulation.MyDate"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.edu.vo.service.ProductService"/>
+    <fullyQualifiedTypeName name="com.edu.vo.Customer"/>
+    <fullyQualifiedTypeName name="com.edu.vo.Product"/>
+    <fullyQualifiedTypeName name="com.edu.access.parent.Parent"/>
+    <fullyQualifiedTypeName name="com.edu.child.Secretery"/>
+    <fullyQualifiedTypeName name="com.edu.parent.Employee"/>
+    <fullyQualifiedTypeName name="com.edu.child.Manager"/>
+    <fullyQualifiedTypeName name="com.edu.service.EmployeeService"/>
+    <fullyQualifiedTypeName name="com.self.vo.Employee"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="java.util.Enumeration"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="com.edu.vo.Manager"/>
+    <fullyQualifiedTypeName name="com.edu.vo.Engineer"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="com.edu.exception.DuplicateIDException"/>
+    <fullyQualifiedTypeName name="com.edu.exception.DuplicateIDException01"/>
+</qualifiedTypeNameHistroy>

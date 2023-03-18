@@ -1,0 +1,19 @@
+package com.edu.oop;
+/*
+ * Object class
+ * 
+ * */
+
+
+public class NoteBook {
+	//1. field
+	public String brand;
+	public int price;
+	public int serialNumber;
+	
+	//2. method
+	public String getNoteBookInfo() {
+		return brand+","+price;
+	}
+		
+}

@@ -1,0 +1,60 @@
+/*
+ * Encapsulation
+ * 소스코드 작성패턴
+ * 1. field 앞 --> private(-)
+ * 2. field에 값을 넣고 받고 --> public(+) 
+ *    void setXxxx(0,0,0)
+ *    Xxx getXxx(()
+ * 3. setXxx() 필드 초기화 하기 진적에 제어문을 사용해서 타당한 값만 필드에 할당되도록 로직을 제어한다.
+ * 
+ */
+
+package com.edu.capsulation;
+
+public class MyDate {
+	private int month;
+	private int day;
+	
+	public int getMonth() {
+		return month;
+	}
+	public void setMonth(int month) {
+		if (month >= 1 && month <=12) {
+			this.month = month;
+		}else {
+			System.out.println("해당하는 월이 아닙니다.");
+		}
+	}
+	
+	public int getDay() {
+		return day;
+	}
+	public void setDay(int day) {
+		//필드초기화 하기 직전에 valid한 값만 입력되도록 제어문을 만든다.
+		switch(month) {
+		case 2:
+			if (day >= 1 && day <= 28) {
+				this.day = day;
+				
+			} break;
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+			if (day >= 1 && day <= 30) {
+				this.day = day;
+				
+			}else{
+				System.exit(0);
+				break;
+			}
+		default:
+			if (day >= 1 && day <= 31) {
+				this.day = day;
+			}else{
+				System.exit(0);
+				break;
+			} 
+		}
+	}
+}

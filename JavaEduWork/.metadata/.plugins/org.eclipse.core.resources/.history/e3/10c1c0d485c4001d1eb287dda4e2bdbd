@@ -1,0 +1,75 @@
+package com.edu.service.impl;
+
+import java.util.ArrayList;
+
+import com.edu.service.EmployeeListService;
+import com.edu.vo.Employee;
+
+public class EmployeeListServiceImpl implements EmployeeListService{
+	
+	
+	private ArrayList<Employee> list;
+	
+	private static EmployeeListServiceImpl service = new EmployeeListServiceImpl();
+	
+	private EmployeeListServiceImpl(){
+		//리사이징이 가능
+		list = new ArrayList<>();
+	}
+	
+	
+	public static EmployeeListServiceImpl getInstance() {
+		return service;
+	}
+	
+	@Override
+	public void addEmployee(Employee e) {
+		//있다면 추가안됨
+		// 없다면 추가되도록
+		int sizeOfArrayList = list.size();
+		
+		if (sizeOfArrayList == 0) {
+			list.add(e);
+		}
+		else {
+			for(int i =0; i < sizeOfArrayList; i++) {
+				if(list.get(i).equals(e)) {
+					System.out.println("존재합니다");
+				}
+				else {
+					list.add(e);
+				}
+			}
+		}
+	}
+
+	@Override
+	public void deleteEmployee(String empId) {
+		// 삭제하려는 직원이있다면 삭제 진행
+		// TODO Auto-generated method stub
+		
+		
+		
+	}
+
+	@Override
+	public void updateEmployee(Employee e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public ArrayList<Employee> findEmployees(String addr) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void findEmployees() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

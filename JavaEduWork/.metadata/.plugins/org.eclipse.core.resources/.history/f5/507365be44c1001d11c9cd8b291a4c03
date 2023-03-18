@@ -1,0 +1,17 @@
+package com.edu.oop;
+
+
+public class Greeting {
+	//1. 필드(멤버변수) 선언
+	public String who;
+	public String greet;
+	public String who;
+	
+	//2. 메소드 정의 = 메소드 선언부 + 메소드 구현부
+	public void sayHello() {
+		System.out.println(who + " , " + greet);
+	}
+	
+	
+
+}

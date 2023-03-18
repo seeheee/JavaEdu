@@ -1,0 +1,58 @@
+package com.edu.self;
+
+public class Account {
+	public int actNumber;
+	public String bankName;
+	public double balance;
+	
+	
+	public Account(int actNumber, String bankName, double balance) {
+		this.actNumber = actNumber;
+		this.bankName = bankName;
+		this.balance = balance;
+	}
+	
+	
+	public int getActNumber() {
+		return actNumber;
+	}
+	public void setActNumber(int actNumber) {
+		this.actNumber = actNumber;
+	}
+	public String getBankName() {
+		return bankName;
+	}
+	public void setBankName(String bankName) {
+		this.bankName = bankName;
+	}
+	public double getBalance() {
+		return balance;
+	}
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+	
+	
+	public void withdraw(double amount) {
+		if (amount > balance) {
+			 System.out.println("잔액이 부족합니다.");
+		}
+		else {
+			balance = balance - amount;
+			System.out.println(balance);
+			System.out.println("출금이 완료되었습니다.");
+		}
+	}
+
+	
+	public void deposit(double amount) {
+		if (amount >= 1000.0) {
+			balance =  balance + amount;
+			System.out.println(balance);
+			System.out.println("입금이 완료되었습니다.");
+		}
+		else {
+			 System.out.println("1천원 이상의 금액을 입금하세요.");
+		}
+	}
+}

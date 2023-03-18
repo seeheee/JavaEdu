@@ -1,0 +1,10 @@
+package com.edu.oop2.test;
+
+public class ProgrammerAppTest1 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
